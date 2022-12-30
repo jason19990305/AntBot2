@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="AntBot_gazebo6">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-4.69255089038809E-16 0.02 4.23678710957959E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0905244257124354" />
+      <inertia
+        ixx="6.86803499169063E-05"
+        ixy="2.59382257463825E-20"
+        ixz="-4.33080749459797E-19"
+        iyy="0.000664852566264196"
+        iyz="-4.27534265576862E-20"
+        izz="0.000600025527294775" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1_1">
+    <inertial>
+      <origin
+        xyz="0.0308791710886825 0.02 1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.014331681469282" />
+      <inertia
+        ixx="7.88611739477641E-06"
+        ixy="1.03034324098567E-21"
+        ixz="8.68208770935658E-21"
+        iyy="1.01190013654868E-05"
+        iyz="3.54404523147118E-22"
+        izz="1.07143252613195E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link1_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link1_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1_1"
+    type="continuous">
+    <origin
+      xyz="-0.13 0.0500000000000001 0"
+      rpy="1.5707963267949 0 1.86719767220728" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1_1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link2_1">
+    <inertial>
+      <origin
+        xyz="0.0650000000000001 -1.80411241501588E-16 2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0370516814692824" />
+      <inertia
+        ixx="1.98115290822747E-05"
+        ixy="-1.86347248395946E-20"
+        ixz="-2.87991202066462E-20"
+        iyy="6.51251299513037E-05"
+        iyz="1.52465930505774E-20"
+        izz="6.35545981373094E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link2_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link2_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2_1"
+    type="continuous">
+    <origin
+      xyz="0.06 0.0199999999999995 0"
+      rpy="-1.5707963267949 0 1.07374229810807" />
+    <parent
+      link="link1_1" />
+    <child
+      link="link2_1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link3_1">
+    <inertial>
+      <origin
+        xyz="0.0972816659999791 -0.00201423877835671 -1.92347469156751E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.053553541421993" />
+      <inertia
+        ixx="3.12509660400559E-05"
+        ixy="1.45403850948269E-08"
+        ixz="1.95222570272094E-08"
+        iyy="0.000182828959162678"
+        iyz="1.83155553633493E-08"
+        izz="0.00018741341231047" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link3_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link3_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3_1"
+    type="continuous">
+    <origin
+      xyz="0.130000000000001 0 0"
+      rpy="0 0.83615820421709 3.14159265358979" />
+    <parent
+      link="link2_1" />
+    <child
+      link="link3_1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link1_2">
+    <inertial>
+      <origin
+        xyz="0.0308791710886826 0.02 -1.66099772824779E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0143316814692821" />
+      <inertia
+        ixx="7.88611739477643E-06"
+        ixy="1.19561941673638E-23"
+        ixz="1.33672386988569E-20"
+        iyy="1.01190013654868E-05"
+        iyz="2.0850672545437E-21"
+        izz="1.07143252613196E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link1_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link1_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1_2"
+    type="continuous">
+    <origin
+      xyz="0 0.05 0"
+      rpy="1.5707963267949 0 1.62821187318779" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link2_2">
+    <inertial>
+      <origin
+        xyz="0.065 -9.32413868337534E-17 -4.16333634234434E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0370516814692824" />
+      <inertia
+        ixx="1.98115290822748E-05"
+        ixy="-1.18584612615602E-20"
+        ixz="4.2351647362715E-21"
+        iyy="6.51251299513037E-05"
+        iyz="-1.37642853928824E-20"
+        izz="6.35545981373093E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link2_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link2_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2_2"
+    type="continuous">
+    <origin
+      xyz="0.0600000000000001 0.0200000000000001 0"
+      rpy="-1.57079632679489 0 1.04861361222807" />
+    <parent
+      link="link1_2" />
+    <child
+      link="link2_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link3_2">
+    <inertial>
+      <origin
+        xyz="0.0972816659999791 0.00198576122164296 -1.92347469157028E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0535535414219932" />
+      <inertia
+        ixx="3.1250966040056E-05"
+        ixy="1.45403850948474E-08"
+        ixz="1.95222570272932E-08"
+        iyy="0.000182828959162678"
+        iyz="1.83155553632828E-08"
+        izz="0.00018741341231047" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link3_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link3_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3_2"
+    type="continuous">
+    <origin
+      xyz="0.13 0 0"
+      rpy="0 1.29810431134274 -3.14159265358979" />
+    <parent
+      link="link2_2" />
+    <child
+      link="link3_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link1_3">
+    <inertial>
+      <origin
+        xyz="0.0308791710886826 0.02 8.32667268468867E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0143316814692821" />
+      <inertia
+        ixx="7.88611739477644E-06"
+        ixy="-4.30839072027947E-21"
+        ixz="-7.83505476210228E-21"
+        iyy="1.01190013654869E-05"
+        iyz="2.43118527462852E-21"
+        izz="1.07143252613196E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link1_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link1_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1_3"
+    type="continuous">
+    <origin
+      xyz="0.13 0.0500000000000001 0"
+      rpy="1.5707963267949 0 1.2009693438459" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1_3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link2_3">
+    <inertial>
+      <origin
+        xyz="0.065 -1.2490009027033E-16 -2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0370516814692825" />
+      <inertia
+        ixx="1.98115290822748E-05"
+        ixy="1.00585162486448E-20"
+        ixz="-7.83505476210228E-20"
+        iyy="6.51251299513039E-05"
+        iyz="-8.470329472543E-21"
+        izz="6.35545981373095E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link2_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link2_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2_3"
+    type="continuous">
+    <origin
+      xyz="0.0600000000000001 0.0200000000000001 0"
+      rpy="-1.5707963267949 0 1.30801953046159" />
+    <parent
+      link="link1_3" />
+    <child
+      link="link2_3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link3_3">
+    <inertial>
+      <origin
+        xyz="0.097281665999979 -0.00201423877835681 -1.92347469157028E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0535535414219932" />
+      <inertia
+        ixx="3.1250966040056E-05"
+        ixy="1.45403850946711E-08"
+        ixz="1.95222570272433E-08"
+        iyy="0.000182828959162678"
+        iyz="1.83155553633222E-08"
+        izz="0.00018741341231047" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link3_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link3_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3_3"
+    type="continuous">
+    <origin
+      xyz="0.13 0 0"
+      rpy="0 1.00422815240069 3.14159265358979" />
+    <parent
+      link="link2_3" />
+    <child
+      link="link3_3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link1_4">
+    <inertial>
+      <origin
+        xyz="0.0308791710886825 0.02 -4.16333634234434E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0143316814692821" />
+      <inertia
+        ixx="7.88611739477642E-06"
+        ixy="-3.24527731349121E-21"
+        ixz="6.98802181484798E-21"
+        iyy="1.01190013654868E-05"
+        iyz="1.39030222051005E-21"
+        izz="1.07143252613196E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link1_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link1_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1_4"
+    type="continuous">
+    <origin
+      xyz="0.13 -0.0500000000000001 0"
+      rpy="1.5707963267949 0 -1.18250389611675" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1_4" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link2_4">
+    <inertial>
+      <origin
+        xyz="0.0649999999999999 2.77555756156289E-16 1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0370516814692824" />
+      <inertia
+        ixx="1.98115290822748E-05"
+        ixy="9.74087889342445E-21"
+        ixz="-1.10114283143059E-20"
+        iyy="6.51251299513037E-05"
+        iyz="1.35525271560688E-20"
+        izz="6.35545981373094E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link2_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link2_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2_4"
+    type="continuous">
+    <origin
+      xyz="0.0600000000000007 0.0200000000000003 0"
+      rpy="-1.5707963267949 0 0.807090789819721" />
+    <parent
+      link="link1_4" />
+    <child
+      link="link2_4" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link3_4">
+    <inertial>
+      <origin
+        xyz="0.0972816659999789 0.0019857612216434 -1.92347469156751E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.053553541421993" />
+      <inertia
+        ixx="3.12509660400558E-05"
+        ixy="1.45403850950302E-08"
+        ixz="1.95222570273619E-08"
+        iyy="0.000182828959162678"
+        iyz="1.83155553633018E-08"
+        izz="0.00018741341231047" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link3_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link3_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3_4"
+    type="continuous">
+    <origin
+      xyz="0.130000000000001 0 0"
+      rpy="3.14159265358979 1.49108871563036 0" />
+    <parent
+      link="link2_4" />
+    <child
+      link="link3_4" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link1_5">
+    <inertial>
+      <origin
+        xyz="0.0308791710886826 0.02 -3.46944695195361E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.014331681469282" />
+      <inertia
+        ixx="7.88611739477641E-06"
+        ixy="-1.33463358368285E-21"
+        ixz="3.81164826264435E-21"
+        iyy="1.01190013654868E-05"
+        iyz="1.68438634434383E-24"
+        izz="1.07143252613195E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link1_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link1_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1_5"
+    type="continuous">
+    <origin
+      xyz="0 -0.05 0"
+      rpy="1.5707963267949 0 -1.22050847566366" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1_5" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link2_5">
+    <inertial>
+      <origin
+        xyz="0.065 -4.16333634234434E-17 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0370516814692824" />
+      <inertia
+        ixx="1.98115290822748E-05"
+        ixy="-1.86347248395946E-20"
+        ixz="2.45639554703747E-20"
+        iyy="6.51251299513038E-05"
+        iyz="3.3881317890172E-21"
+        izz="6.35545981373095E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link2_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link2_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2_5"
+    type="continuous">
+    <origin
+      xyz="0.06 0.02 0"
+      rpy="-1.5707963267949 0 0.932805214501696" />
+    <parent
+      link="link1_5" />
+    <child
+      link="link2_5" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link3_5">
+    <inertial>
+      <origin
+        xyz="0.0972816659999791 -0.00201423877835683 -1.92347469156195E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0535535414219932" />
+      <inertia
+        ixx="3.1250966040056E-05"
+        ixy="1.4540385094832E-08"
+        ixz="1.95222570272475E-08"
+        iyy="0.000182828959162678"
+        iyz="1.83155553632646E-08"
+        izz="0.00018741341231047" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link3_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link3_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3_5"
+    type="continuous">
+    <origin
+      xyz="0.13 0 0"
+      rpy="-3.14159265358977 1.53498654104415 0" />
+    <parent
+      link="link2_5" />
+    <child
+      link="link3_5" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link1_6">
+    <inertial>
+      <origin
+        xyz="0.0308791710886825 0.02 2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.014331681469282" />
+      <inertia
+        ixx="7.88611739477642E-06"
+        ixy="-5.44718956664257E-21"
+        ixz="1.48230765769503E-21"
+        iyy="1.01190013654868E-05"
+        iyz="2.18888895186693E-21"
+        izz="1.07143252613195E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link1_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link1_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1_6"
+    type="continuous">
+    <origin
+      xyz="-0.13 -0.0500000000000003 0"
+      rpy="1.5707963267949 0 -1.29582014475169" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1_6" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link2_6">
+    <inertial>
+      <origin
+        xyz="0.0649999999999999 -1.94289029309402E-16 2.08166817117217E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0370516814692824" />
+      <inertia
+        ixx="1.98115290822747E-05"
+        ixy="-9.3173624197973E-21"
+        ixz="-2.15993401549847E-20"
+        iyy="6.51251299513036E-05"
+        iyz="-6.7762635780344E-21"
+        izz="6.35545981373092E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link2_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link2_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2_6"
+    type="continuous">
+    <origin
+      xyz="0.0599999999999999 0.0199999999999995 0"
+      rpy="-1.5707963267949 0 1.10851502153348" />
+    <parent
+      link="link1_6" />
+    <child
+      link="link2_6" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link3_6">
+    <inertial>
+      <origin
+        xyz="0.0972816659999789 -0.00201423877835669 -1.92347469156751E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.053553541421993" />
+      <inertia
+        ixx="3.12509660400562E-05"
+        ixy="1.45403850947994E-08"
+        ixz="1.9522257027256E-08"
+        iyy="0.000182828959162678"
+        iyz="1.83155553633086E-08"
+        izz="0.00018741341231047" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link3_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AntBot_gazebo6/meshes/link3_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3_6"
+    type="continuous">
+    <origin
+      xyz="0.130000000000001 0 0"
+      rpy="0 1.08794189270748 3.14159265358979" />
+    <parent
+      link="link2_6" />
+    <child
+      link="link3_6" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
